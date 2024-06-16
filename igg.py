@@ -305,8 +305,8 @@ class instagram:
             tambahan=sol().input("\n[bold green]#[/bold green] [bold white]Do you want to use additional password (y or n) : ")
             if tambahan in("y","Y"):
                 prints("\n[bold white]Enter your additional password using a comma as a separator\nExample : [bold green]Password1,Password2,Password3[/bold green][/bold white]")
-                #zx=sol().input("\n[bold green]#[/bold green] [bold white]Password : ")
-                self.otomatisPassword(tambahan,internal)
+                zx=sol().input("\n[bold green]#[/bold green] [bold white]Password : ")
+                self.otomatisPassword(tambahan,internal,zx)
             else:
                 self.otomatisPassword(tambahan,internal)
         elif c in("y","Y"):
